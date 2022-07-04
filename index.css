@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: 'verilate';
     src: url('font/verilate_reguler-webfont.woff2') format('woff2'),
@@ -38,11 +42,19 @@ ul {
     height: 152px;
 }
 
-body {
+header .bi{
+    font-size: 40px;
+}
+
+main .bi{
+    font-size: 88px;
+}
+
+main {
     background: var(--crema);
 }
 
-h2{
+.subtitle{
     font-family: 'Verilate';
     font-style: normal;
     font-weight: 400;
@@ -51,6 +63,52 @@ h2{
 }
 
 .about{
+    padding: 80px 0px 0px;
+    height: 100vh;
     color: var(--verde-agua);
-    padding: 80px 0;
+}
+
+.projects{
+    height: 100vh;
+    color: var(--rojo-claro);
+}
+
+.contact{
+    height: 100vh;
+    color: var(--naranja-amanecer);
+    
+}
+
+.formulario{
+    height: 100vh;
+    width: 100vw;
+    background: var(--naranja-amanecer);
+    color: #ECE6C2;
+    gap: 100px;
+}
+
+footer{
+    background-color: var(--naranja-amanecer);
+    height: 100px;
+}
+
+.pregunta{
+    width: 950px;
+    height: 240px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+}
+
+.email, .email a{
+    text-decoration: none;
+    color: var(--marron-abeto);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.clickeable:hover{
+    font-size: 110px;
+    color: black;
 }
