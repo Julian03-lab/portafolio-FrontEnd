@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'verilate';
+    src: url('font/verilate_reguler-webfont.woff2') format('woff2'),
+         url('font/verilate_reguler-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --crema: #ECE6C2;
+    --verde-agua: #73BDA8;
+    --naranja-amanecer:#D2A24C;
+    --rojo-claro:#CC6B49;
+    --marron-abeto:#6F5643;
+}
+
+header{
+    background-color: var(--marron-abeto);
+}
+
+ul {
+    list-style: none;
+}
+
+.header-element{
+    color: var(--crema);
+}
+
+.header-element.title{
+    font-family: 'verilate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 76px;
+}
