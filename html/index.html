@@ -4,22 +4,69 @@
     <meta charset="UTF-8">
     <title>Portafolio Julian Fontana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/portafolio-FrontEnd/css/index.css">
+    <link rel="stylesheet" href="/portafolio-FrontEnd/css/header.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container-fluid">
-
+        <header class="d-flex flex-column align-items-center header">
+            <div class="title text-center">Julian Fontana</div>
+            <div class="subtitle text-center"><p>{</p>Estudiante Ing. Computacion<p>}</p>
+            </div>
+        </header>
     </div>
+    <nav class="d-flex navbar justify-content-between align-items-center">
+        <ul class="d-flex gap-4">
+            <li>
+                <a href="https://www.instagram.com/julianfontana003" target="_blank" class="header-element"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/Julian03-lab" target="_blank" class="header-element"><i class="bi bi-github"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/_Julian03" target="_blank" class="header-element"><i class="bi bi-twitter"></i></a>
+            </li>
+        </ul>
+        <ul class="d-flex gap-4">
+            <li>
+                <a href="#about" class="header-element"><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
+            </li>
+            <li>
+                <a href="#projects" class="header-element"><i class="bi bi-pc"></i> Proyectos </a>
+            </li>
+            <li>
+                <a href="#contact" class="header-element"><i class="bi bi-mailbox2"></i> Contacto </a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
 </body>
 </html>
+
+<!--
+    .subtitle::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--oscuro);
+    border-left: 2px solid var(--claro);
+    animation: typing 4s steps(28) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+-->
