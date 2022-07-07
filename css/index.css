@@ -6,6 +6,10 @@
     --verdeoscuro: #3d5546;
 }
 
-body {
+body{
     overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0;
 }

@@ -1,0 +1,71 @@
+.header{
+    background-color: var(--oscuro);
+    padding: 1rem 5.1875rem;
+}
+
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: var(--claro);
+    font-size: 4.5rem;
+}
+
+.subtitle{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: var(--claro);
+    font-size: 3rem;
+    position: relative;
+    width: max-content;
+}
+
+p{
+    display: inline;
+    color: var(--celesteoscuro);
+}
+
+.navbar{
+    background-color: var(--oscuro);
+    padding: 0px 5.1875rem 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.header-element{
+    color: var(--claro);
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--celesteoscuro);
+}
+
+.subtitle::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--oscuro);
+    border-left: 2px solid var(--claro);
+    animation: typing 12s steps(30) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
