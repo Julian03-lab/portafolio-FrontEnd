@@ -1,0 +1,11 @@
+:root{
+    --oscuro: #003137;
+    --claro: #9EB3AC;
+    --semioscuro: #004349;
+    --celesteoscuro: #518186;
+    --verdeoscuro: #3d5546;
+}
+
+body {
+    overflow-x: hidden;
+}
