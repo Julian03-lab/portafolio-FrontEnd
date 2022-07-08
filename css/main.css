@@ -1,0 +1,51 @@
+.about, .projects{
+    padding: 2rem 5.1875rem;
+    background-color: var(--claro);
+}
+
+.about-title{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--semioscuro);
+}
+
+.about-description-text{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--semioscuro);
+}
+
+.about-description-text em{
+    font-size: 2.1rem;
+    font-style: normal;
+    color: var(--oscuro);
+}
+
+.about-description-line{
+    border: 0.1875rem solid var(--oscuro);
+}
+
+.abillity{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--semioscuro);
+    font-size: 2.5rem;
+}
+
+.about-description-abillity{
+    color: var(--oscuro);
+    font-size: 3rem;
+}
+
+.project-title{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--verdeoscuro);
+}

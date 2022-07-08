@@ -20,8 +20,7 @@
     width: max-content;
 }
 
-p{
-    display: inline;
+span{
     color: var(--celesteoscuro);
 }
 
@@ -52,6 +51,10 @@ a:hover{
     color: var(--celesteoscuro);
 }
 
+.nav-text{
+    font-size: 0;
+}
+
 .subtitle::after{
     content: "";
     position: absolute;
@@ -60,7 +63,7 @@ a:hover{
     width: 100%;
     background: var(--oscuro);
     border-left: 2px solid var(--claro);
-    animation: typing 12s steps(30) infinite;
+    animation: typing 10s steps(30) infinite;
 }
 
 @keyframes typing {
