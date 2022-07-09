@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--oscuro);
+    background-color: var(--negrox);
     padding: 1rem 5.1875rem;
 }
 
@@ -7,26 +7,27 @@
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 800;
-    color: var(--claro);
+    color: var(--blancox);
     font-size: 4.5rem;
 }
 
 .subtitle{
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
-    color: var(--claro);
+    color: var(--blancox);
     font-size: 3rem;
     position: relative;
     width: max-content;
 }
 
 span{
-    color: var(--celesteoscuro);
+    color: var(--naranjax);
 }
 
 .navbar{
-    background-color: var(--oscuro);
+    background-color: var(--negrox);
     padding: 0px 5.1875rem 1rem;
+    border-bottom: 2px solid #FB8122;
 }
 
 ul {
@@ -36,7 +37,7 @@ ul {
 }
 
 .header-element{
-    color: var(--claro);
+    color: var(--blancox);
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -48,21 +49,21 @@ a{
 }
 
 a:hover{
-    color: var(--celesteoscuro);
+    color: var(--naranjax);
 }
 
 .nav-text{
     font-size: 0;
 }
-
+ /*
 .subtitle::after{
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--oscuro);
-    border-left: 2px solid var(--claro);
+    background: var(--negrox);
+    border-left: 2px solid var(--naranjax);
     animation: typing 10s steps(30) infinite;
 }
 

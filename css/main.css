@@ -1,6 +1,6 @@
 .about, .projects{
-    padding: 2rem 5.1875rem;
-    background-color: var(--claro);
+    padding: 3rem 5.1875rem;
+    background-color: var(--negrox);
 }
 
 .about-title{
@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 5rem;
-    color: var(--semioscuro);
+    color: var(--naranjax);
 }
 
 .about-description-text{
@@ -16,29 +16,29 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
-    color: var(--semioscuro);
+    color: var(--blancox);
 }
 
 .about-description-text em{
     font-size: 2.1rem;
     font-style: normal;
-    color: var(--oscuro);
+    color: var(--naranjax);
 }
 
 .about-description-line{
-    border: 0.1875rem solid var(--oscuro);
+    border: 0.1875rem solid var(--naranjax);
 }
 
 .abillity{
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: var(--semioscuro);
+    color: var(--blancox);
     font-size: 2.5rem;
 }
 
 .about-description-abillity{
-    color: var(--oscuro);
+    color: var(--naranjax);
     font-size: 3rem;
 }
 
