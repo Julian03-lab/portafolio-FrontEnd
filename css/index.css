@@ -6,14 +6,22 @@
     --verdeoscuro: #3d5546;
     --naranjax: #FB8122;
     --blancox:#E1E2E2;
-    --negrox: #1D2228;
+    --negrox: #141824;
 }
 
 body{
     overflow-x: hidden;
-    background-color: var(--claro);
+    background-color: var(--negrox);
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
 }
 
 .container-fluid{
     padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
 }

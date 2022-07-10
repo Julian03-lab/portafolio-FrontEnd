@@ -1,28 +1,34 @@
-.about, .projects{
-    padding: 3rem 5.1875rem;
-    background-color: var(--negrox);
+#particles-js{
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
 }
 
-.about-title{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
+.about, .contact{
+    padding: 3rem 5.1875rem;
+    position: relative;
+    z-index: 99;
+}
+
+.about-title, .contact-title{
     font-weight: 700;
     font-size: 5rem;
     color: var(--naranjax);
 }
 
 .about-description-text{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
     color: var(--blancox);
 }
 
-.about-description-text em{
-    font-size: 2.1rem;
+em{
     font-style: normal;
     color: var(--naranjax);
+}
+
+.about-description-text em{
+    font-size: 2.1rem;
 }
 
 .about-description-line{
@@ -30,8 +36,6 @@
 }
 
 .abillity{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
     font-weight: 700;
     color: var(--blancox);
     font-size: 2.5rem;
@@ -42,10 +46,32 @@
     font-size: 3rem;
 }
 
-.project-title{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
+.contact-content{
     font-weight: 700;
-    font-size: 5rem;
-    color: var(--verdeoscuro);
+    font-size: 4.5rem;
+}
+
+.option-white{
+    color: var(--blancox);
+}
+.option-orange{
+    color: var(--naranjax);
+}
+
+.contact-content a:hover{
+    font-size: 5.4rem;
+}
+
+.contact{
+    padding-bottom: 0;
+}
+
+footer{
+    height: 6rem;
+    padding: 0 5.1875rem;
+    color: var(--blancox);
+}
+
+footer .header-element{
+    font-size: 1rem;
 }

@@ -4,8 +4,6 @@
 }
 
 .title{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
     font-weight: 800;
     color: var(--blancox);
     font-size: 4.5rem;
@@ -30,16 +28,8 @@ span{
     border-bottom: 2px solid #FB8122;
 }
 
-ul {
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-}
-
 .header-element{
     color: var(--blancox);
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -55,7 +45,7 @@ a:hover{
 .nav-text{
     font-size: 0;
 }
- /*
+
 .subtitle::after{
     content: "";
     position: absolute;
@@ -65,6 +55,7 @@ a:hover{
     background: var(--negrox);
     border-left: 2px solid var(--naranjax);
     animation: typing 10s steps(30) infinite;
+    overflow-x: hidden;
 }
 
 @keyframes typing {
