@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/484e19643d.js" crossorigin="anonymous"></script>
+    
 
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="container-fluid">
         <header class="d-flex flex-column align-items-center header">
             <div class="title text-center">Julian Fontana</div>
@@ -48,7 +50,7 @@
         </nav>
     </div>
     <div class="container-fluid">
-        <main class="d-flex flex-column align-items-center "> 
+        <main class="d-flex flex-column align-items-center"> 
             <section class="container-fluid about d-flex flex-column align-items-center gap-3" id="about">
                 <div class="about-title">
                     <i class="bi bi-file-person-fill"></i> Sobre Mi</a>
@@ -69,13 +71,42 @@
                     </ul>
                 </div>
             </section>
-            <section class="projects" id="projects">
-                <div class="project-title">
-                    <i class="bi bi-pc"></i> Proyectos</a>
+
+            <section class="contact d-flex flex-column align-items-center gap-5" id="contact">
+                <div class="contact-title">
+                    <i class="bi bi-mailbox2"></i> Contacto</a>
+                </div>
+                <div class="contact-content text-center">
+                    <div class="option-white">¿Queres contactar conmigo?</div>
+                    <div class="option-orange">Hacelo al siguiente correo:</div>
+                    <div class="option-white">julian03yt@gmail.com</div>
+                    <a href="mailto:julian03yt@gmail.com"><i class="bi bi-hand-index option-orange"></i></a>
                 </div>
             </section>
         </main>
     </div>
+    <div class="container-fluid">
+        <footer class="d-flex justify-content-between align-items-center">
+            <div id="copyright">Copyright&copy; 2022 - Página creada por <em>Julián Fontana</em> - Todos los derechos reservados</div>
+            <ul class="d-flex gap-4">
+                <li>
+                    <a href="https://www.instagram.com/julianfontana003" target="_blank" class="header-element">Instagram</i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Julian03-lab" target="_blank" class="header-element">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/_Julian03" target="_blank" class="header-element">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/julian-fontana-391a90206/" target="_blank" class="header-element">LinkedIn</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Particles JS -->
+    <script src="/portafolio-FrontEnd/js/particles.min.js"></script>
+    <script src="/portafolio-FrontEnd/js/app.js"></script> 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
