@@ -47,6 +47,7 @@ a:hover{
     font-size: 0;
 }
 
+/*
 .subtitle::after{
     content: "";
     position: absolute;
