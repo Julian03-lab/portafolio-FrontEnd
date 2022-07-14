@@ -16,10 +16,15 @@
     color: var(--naranjax);
 }
 
-.about-description-text{
+.about-content{
+    border: var(--naranjax) solid 3px ;
+}
+
+#about-description-text{
     font-weight: 700;
     font-size: 1.6rem;
     color: var(--blancox);
+    margin:0;
 }
 
 em{
@@ -27,11 +32,59 @@ em{
     color: var(--naranjax);
 }
 
-.about-description-text em{
-    font-size: 2.1rem;
+.input-style{
+    border: 2px solid var(--naranjax);
+    padding: 0.5rem;
+    background-color: transparent;
+    color: var(--blancox);
+    display: none;
 }
 
-.divisor-line{
+#editable-name{
+    font-size: 1.2rem;
+    display: none;
+}
+
+#editable-title{
+    font-size: 1.2rem;
+    display: none;
+}
+#editable-description{
+    font-size: 1.2rem;
+    display: none;
+}
+
+#user-photo {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(/resources/stock1.jpg);
+  }
+
+#user-name{
+    font-size: 2rem;
+    color: var(--blancox);
+    font-weight: 700;
+}
+
+#user-title{
+    font-size: 1.5rem;
+    color: var(--naranjax);
+    font-weight: 500;
+}
+
+.edit-about-button{
+    font-size: 2rem;
+    color: var(--naranjax);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+  .divisor-line{
     border: 0.1875rem solid var(--naranjax);
     width: 100%;
 }
@@ -104,4 +157,12 @@ footer .header-element{
 
 .btn-github a{
     color: var(--negrox);
+}
+
+.project-buttons>*{
+    font-size: 2.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--naranjax);
+    padding: 0 1rem;
 }

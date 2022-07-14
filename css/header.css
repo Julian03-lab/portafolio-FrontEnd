@@ -24,10 +24,29 @@ span{
 
 .navbar{
     background-color: var(--negrox);
-    padding: 0px 5.1875rem 1rem;
+    padding: 1rem 5.1875rem;
     border-bottom: 2px solid #FB8122;
 }
 
+#argentina-programa{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--naranjax);
+}
+
+#login-button{
+    font-size: 1.5rem;
+    border: var(--blancox) solid 2px;
+    border-radius: 5%; 
+    background-color: transparent;
+    color: var(--blancox);
+    padding: 0.5rem 1rem;
+}
+
+#login-button:hover{
+    color: var(--naranjax);
+    border-color: var(--naranjax);
+}
 
 .header-element{
     color: var(--blancox);

@@ -24,19 +24,8 @@
             <div class="subtitle text-center"><span>{</span>Estudiante Ing. Computacion<span>}</span>
             </div>
         </header>
-        <nav class="d-flex navbar justify-content-between">
-            <ul class="d-flex gap-4">
-                <li>
-                    <a href="https://www.instagram.com/julianfontana003" target="_blank" class="header-element"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Julian03-lab" target="_blank" class="header-element"><i class="bi bi-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/_Julian03" target="_blank" class="header-element"><i class="bi bi-twitter"></i></a>
-                </li>
-            </ul>
-            <ul class="d-flex gap-4">
+        <nav class="d-flex flex-row-reverse navbar justify-content-between align-items-center">
+            <ul class="d-flex gap-4 align-items-center">
                 <li>
                     <a href="#about" class="header-element"><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
                 </li>
@@ -46,21 +35,58 @@
                 <li>
                     <a href="#contact" class="header-element"><i class="bi bi-mailbox2"></i> Contacto </a>
                 </li>
+                <li>
+                    <button id="login-button"><i class="bi bi-box-arrow-in-left"></i> Entrar</button>
+                </li>
             </ul>
+            <ul class="d-flex gap-4 align-items-center">
+                <li>
+                    <a href="https://www.instagram.com/julianfontana003" target="_blank" class="header-element"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Julian03-lab" target="_blank" class="header-element"><i class="bi bi-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/_Julian03" target="_blank" class="header-element"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li id="argentina-programa">#ArgentinaPrograma</li>
+            </ul>
+
         </nav>
     </div>
     <div class="container-fluid">
         <main class="d-flex flex-column align-items-center"> 
             <section class="container-fluid about d-flex flex-column align-items-center gap-3" id="about">
                 <div class="about-title">
-                    <i class="bi bi-file-person-fill"></i> Sobre Mi</a>
+                    <a><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
                 </div>
-                <div class="w-75 d-flex flex-column gap-1 text-center">
-                    <p class="about-description-text">
-                        Soy <em>Julián Fontana</em>, nací en San Antonio Oeste, Rio Negro, Argentina y tras haber vivido toda mi vida en ese lugar, decidí trasladarme a San Carlos de Bariloche, donde me encuentro cursando la carrera de <em>Ingeniería en Computación</em>  en la Universidad de Río Negro. <br><br>
-                        Desde que era chico siempre sentí una gran curiosidad y gusto por el mundo tecnológico, lo que me motivo a aprender a <em>programar</em> y a ser cada día mejor en este ámbito, ya que considero que no hay límite para seguir aprendiendo.<br><br>
-                        Sin embargo, esto no es lo único que me gusta hacer en mi vida. Soy un gran aficionado a los <em>esports</em>, de hecho, en el pasado fui parte de diferentes organizaciones profesionales, obteniendo logros a nivel mundial en diferentes juegos. Tambien tengo una gran aficion por la creación de contenidos y la producción audiovisual.
-                    </p>
+                <div class=" w-75 d-flex flex-column justify-content-center align-items-center gap-3 position-relative">
+                    <button class="position-absolute top-0 end-0 m-3 edit-about-button" onclick="showAboutEditables()"><i class="bi bi-pencil-square"></i></button>
+                    <div class="row justify-content-center align-items-center about-content py-5">
+                        <div class="col-3 d-flex flex-column align-items-center gap-2 text-center">
+                            <div id="user-photo"></div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div id="user-name">Julián Fontana</div>
+                                <button class="edit-about-button" id="editable-name" onclick="showEditOption('user-name-input')"><i class="bi bi-pencil-square"></i></button>
+                            </div>
+                            <input type="text" id="user-name-input" placeholder="Editar nombre" class="input-style">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div id="user-title">Full Stack Developer Jr.</div>
+                                <button class="edit-about-button" id="editable-title" onclick="showEditOption('user-title-input')"><i class="bi bi-pencil-square"></i></button>
+                            </div>
+                            <input type="text" id="user-title-input" placeholder="Editar titulo" class="input-style">
+                        </div>
+                        <div class="col-7 d-flex flex-column gap-2">
+                            <p id="about-description-text">
+                                Soy Julián Fontana, nací en San Antonio Oeste, Rio Negro, Argentina y tras haber vivido toda mi vida en ese lugar, decidí trasladarme a San Carlos de Bariloche, donde me encuentro cursando la carrera de Ingeniería en Computación  en la Universidad de Río Negro. <br><br>
+                                Desde que era chico siempre sentí una gran curiosidad y gusto por el mundo tecnológico, lo que me motivo a aprender a programar y a ser cada día mejor en este ámbito, ya que considero que no hay límite para seguir aprendiendo.
+                            </p>
+                            <button class="edit-about-button align-self-end" id="editable-description" onclick="showEditOption('about-description-input')"><i class="bi bi-pencil-square"></i></button>
+                            <input type="text" id="about-description-input" placeholder="Editar texto" class="input-style">
+                        </div>
+                    </div>
+                    
+                    <!--
                     <div class="divisor-line"></div>
                     <div class="abillity">Habilidades:</div>
                     <ul class="about-description-abillity d-flex gap-3 justify-content-center">
@@ -69,6 +95,7 @@
                         <li><i class="fa-brands fa-html5"></i></li>
                         <li><i class="fa-brands fa-css3-alt"></i></li>
                     </ul>
+                    -->
                 </div>
             </section>
             <section class="project d-flex flex-column align-items-center gap-4" id="project">
@@ -77,11 +104,21 @@
                 </div>
                 <div class="divisor-line"></div>
                 <div class="project-template d-flex flex-column align-items-start justify-content-start gap-3 py-4">
-                    <div class="project-title"><span>1.</span> Portafolio personal </div>
+                    <div class="project-title"><span>1.</span> Portafolio personal - Proyecto ArgentinaPrograma</div>
                     <div class="row align-items-center">
                         <div class="col project-template-text">
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt distinctio officiis, a magni tempora soluta quo, libero minus corporis voluptatibus quidem impedit, ut dolor consequuntur accusamus facilis perferendis amet officia?</div>
-                            <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/portafolio-FrontEnd"> GitHub</a></button>
+                            <div class="project-text">Desarrollar una aplicación web full stack, que mostrará: tus datos personales, estudios cursados, experiencia laboral, conocimiento de las
+                                tecnologías y lo que desees agregar. Es decir, ¡crear tu propio portfolio web! Esta aplicación deberá ser de arquitectura distribuida y contener un
+                                diseño de interfaz de usuario (front end) que muestre la información, una base de datos que almacene los datos antes mencionados y debe contar
+                                con las APIs necesarias para proveer a través de internet la información (back end). </div>
+                            <div class="d-flex justify-content-between align-items-end">
+                                <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/portafolio-FrontEnd"> GitHub</a></button>
+                                <div class="project-buttons">
+                                    <button><i class="bi bi-pencil-square"></i></button>
+                                    <button><i class="bi bi-trash3"></i></button>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="col">
                             <img src="/resources/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
@@ -96,8 +133,14 @@
                             <img src="/resources/ATM Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid project-image">
                         </div>
                         <div class="col project-template-text">
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt distinctio officiis, a magni tempora soluta quo, libero minus corporis voluptatibus quidem impedit, ut dolor consequuntur accusamus facilis perferendis amet officia?</div>
-                            <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/TPFinal"> GitHub</a></button>
+                            <div class="project-text">El objetivo de este proyecto era simular el funcionamiento de un cajero automatico de un banco internacional mediante un algoritmo que sea ejecutado en la consola. El cajero debia contar con las funciones de: Consultar saldo en Soles Peruanos y Pesos Argentinos, consultar movimientos de la cuenta, retirar Soles y Pesos y poder transferir Soles y Pesos.</div>
+                            <div class="d-flex justify-content-between align-items-end">
+                                <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/TPFinal"> GitHub</a></button>
+                                <div class="project-buttons">
+                                    <button><i class="bi bi-pencil-square"></i></button>
+                                    <button><i class="bi bi-trash3"></i></button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>  
@@ -156,5 +199,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>
