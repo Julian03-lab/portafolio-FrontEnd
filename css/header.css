@@ -18,10 +18,6 @@
     width: max-content;
 }
 
-span{
-    color: var(--naranjax);
-}
-
 .navbar{
     background-color: var(--negrox);
     padding: 1rem 5.1875rem;

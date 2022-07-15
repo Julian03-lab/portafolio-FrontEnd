@@ -27,16 +27,28 @@
     margin:0;
 }
 
+
+
 em{
     font-style: normal;
     color: var(--naranjax);
 }
 
 .input-style{
-    border: 2px solid var(--naranjax);
+    border: 2px solid var(--blancox);
     padding: 0.5rem;
     background-color: transparent;
     color: var(--blancox);
+    display: none;
+}
+
+.input-style:focus{
+    border: 2px solid var(--naranjax);
+    outline: none;
+}
+
+#submit-description{
+    font-size: 3rem;
     display: none;
 }
 
@@ -54,6 +66,11 @@ em{
     display: none;
 }
 
+#editable-img{
+    font-size: 2.5rem;
+    display: none;
+}
+
 #user-photo {
     height: 150px;
     width: 150px;
@@ -64,6 +81,7 @@ em{
     background-image: url(/resources/stock1.jpg);
   }
 
+  
 #user-name{
     font-size: 2rem;
     color: var(--blancox);
@@ -127,22 +145,17 @@ footer .header-element{
     font-size: 1rem;
 }
 
-.project-title span{
-    color: var(--blancox);
-    
-}
-
 .project-title{
     color: var(--naranjax);
     font-size: 4rem;
     font-weight: 700;
+    margin-top: 2rem;
 }
 
 .project-text{
     font-size: 2rem;
     font-weight: 400;
     color: var(--blancox);
-    margin-bottom: 3rem;
 }
 
 .btn-github{
@@ -160,9 +173,24 @@ footer .header-element{
 }
 
 .project-buttons>*{
-    font-size: 2.5rem;
+    font-size: 2rem;
     border: none;
     background-color: transparent;
     color: var(--naranjax);
-    padding: 0 1rem;
+}
+
+.edit-project-button{
+    font-size: 2rem;
+    color: var(--naranjax);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: none;
+}
+
+li{
+    color: var(--blancox);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 2rem;
 }
