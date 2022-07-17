@@ -30,22 +30,22 @@ function editElement(input,field, submit) {
     
 }
 
-function showProjectEditables(number, button) {
+function showProjectEditables(number) {
     document.getElementById("project-upload-img-" + number).style.display ="inline"
     document.getElementById("project-edit-title-" + number).style.display ="inline"
     document.getElementById("project-edit-text-" + number).style.display ="inline"
     document.getElementById("project-edit-link-" + number).style.display ="inline"
-    // document.getElementsByClassName('edit-about-button')[button+7].classList.toggle('invisible')
+    document.getElementById('project-accept-changes-' + number).classList.toggle('invisible')
 }
 
-// function notShowProjectEditables(number, button) {
-//     document.getElementById("project-upload-img-" + number).style.display ="none"
-//     document.getElementById("project-edit-title-" + number).style.display ="none"
-//     document.getElementById("project-edit-text-" + number).style.display ="none"
-//     document.getElementById("project-edit-link-" + number).style.display ="none"
-//     editElement('project-description-input', 'project-text-one','submit-project-description')
-//     document.getElementsByClassName('edit-about-button')[button+7].classList.toggle('invisible')
-// }
+ function notShowProjectEditables(number) {
+     document.getElementById("project-upload-img-" + number).style.display ="none"
+     document.getElementById("project-edit-title-" + number).style.display ="none"
+     document.getElementById("project-edit-text-" + number).style.display ="none"
+     document.getElementById("project-edit-link-" + number).style.display ="none"
+     editElement('project-description-input', 'project-text-one','submit-project-description')
+     document.getElementById('project-accept-changes-' + number).classList.toggle('invisible')
+ }
 
 function removeSection(section) {
     document.getElementById("project-" + section).style.display = "none"
