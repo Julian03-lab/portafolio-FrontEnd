@@ -10,7 +10,7 @@
     z-index: 99;
 }
 
-.about-title, .contact-title, .section-project-title{
+.about-title, .contact-title, .section-project-title, .education-title{
     font-weight: 700;
     font-size: 5rem;
     color: var(--naranjax);
@@ -27,7 +27,9 @@
     margin:0;
 }
 
-
+#project-title-input{
+    font-size: 1.5rem;
+}
 
 em{
     font-style: normal;
@@ -49,6 +51,11 @@ em{
 
 #submit-description{
     font-size: 3rem;
+    display: none;
+}
+
+#submit-project-description, #project-description-input , #project-link-input-one{
+    font-size: 2rem;
     display: none;
 }
 
@@ -188,7 +195,7 @@ footer .header-element{
     display: none;
 }
 
-li{
+.project li{
     color: var(--blancox);
     font-size: 4rem;
     font-weight: 700;

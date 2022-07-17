@@ -20,20 +20,21 @@
     <div id="particles-js"></div>
     <div class="container-fluid">
         <header class="d-flex flex-column align-items-center header">
-            <div class="title text-center">Julian Fontana</div>
-            <div class="subtitle text-center"><span>{</span>Estudiante Ing. Computacion<span>}</span>
+            <div class="title text-center">Julián Fontana</div>
+            <div class="subtitle text-center"><span class="option-orange">{</span>Estudiante Ing. Computacion<span class="option-orange">}</span>
             </div>
         </header>
         <nav class="d-flex flex-row-reverse navbar justify-content-between align-items-center">
+            
             <ul class="d-flex gap-4 align-items-center">
-                <li>
+                <!-- <li>
                     <a href="#about" class="header-element"><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
                 </li>
                 <li>
                     <a href="#project" class="header-element"><i class="bi bi-pc"></i> Proyectos </a>
                 </li>
                 <li>
-                    <a href="#contact" class="header-element"><i class="bi bi-mailbox2"></i> Contacto </a>
+                    <a href="#contact" class="header-element"><i class="bi bi-mailbox2"></i> Contacto </a> -->
                 </li>
                 <li>
                     <button id="login-button"><i class="bi bi-box-arrow-in-left"></i> Entrar</button>
@@ -61,7 +62,10 @@
                     <a><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
                 </div>
                 <div class=" w-75 d-flex flex-column justify-content-center align-items-center gap-3 position-relative" >
-                    <button class="position-absolute top-0 end-0 m-3 edit-about-button" onclick="showAboutEditables()"><i class="bi bi-pencil-square"></i></button>
+                    <div class="position-absolute top-0 end-0 m-3 d-flex gap-3">
+                        <button class="edit-about-button invisible" onclick="notShowAboutEditables()"><i class="bi bi-check-square"></i></button>
+                        <button class="edit-about-button" onclick="showAboutEditables()"><i class="bi bi-pencil-square"></i></button>
+                    </div>
                     <div class="row justify-content-center align-items-center about-content py-5" style="min-width: 100%;">
                         <div class="col-3 d-flex flex-column align-items-center gap-2 text-center">
                             <div id="user-photo" class="position-relative">
@@ -88,7 +92,7 @@
                             <!--<input type="text" id="about-description-input" placeholder="Editar texto" class="input-style" onchange="editElement()">-->
                             <div class="d-flex gap-4">
                                 <textarea name="about-description-input" placeholder="Inserte la nueva descripcion" class="input-style flex-fill" id="about-description-input" style="resize: none;"></textarea>
-                                <button class="edit-about-button" id="submit-description" onclick="editElement('about-description-input', 'about-description-text')"><i class="bi bi-file-check"></i></button>
+                                <button class="edit-about-button" id="submit-description" onclick="editElement('about-description-input', 'about-description-text', 'submit-description')"><i class="bi bi-check-square"></i></button>
                             </div>
                             
                         </div>
@@ -106,47 +110,63 @@
                     -->
                 </div>
             </section>
+            <section class="education d-flex flex-column align-items-center gap-4" id="education">
+                <div class="education-title">
+                    <a><i class="bi bi-journals"></i> Educacion</a>
+                </div>
+            </section>
             <section class="project d-flex flex-column align-items-center gap-4" id="project">
                 <div class="section-project-title">
                     <i class="bi bi-pc"></i> Proyectos </a>
                 </div>
-                <ol id="projects-list">
-                    <li>
+                <ul id="projects-list">
+                    <li id="project-one">
+                        <div class="divisor-line"></div>
                         <div class="project-template position-relative d-flex flex-column align-items-start justify-content-start gap-3 py-4">
                             <div class="project-buttons position-absolute top-0 end-0 m-3 edit-about-button">
-                                <button onclick="showProjectEditables('one')"><i class="bi bi-pencil-square"></i></button>
-                                <button onclick="removeSection(0)"><i class="bi bi-trash3"></i></button>
+                                <button class="edit-about-button invisible" onclick="notShowProjectEditables('one',1)"><i class="bi bi-check-square"></i></button>
+                                <button onclick="showProjectEditables('one', 1)"><i class="bi bi-pencil-square"></i></button>
+                                <button onclick="removeSection('one')"><i class="bi bi-trash3"></i></button>
                             </div>
-                            <div class="project-title">
-                                Portafolio personal - Proyecto ArgentinaPrograma
-                                <button class="edit-project-button align-self-end" id="project-edit-title-one" onclick="showEditOption('user-name-input')"><i class="bi bi-pencil-square"></i></button>
+                            <div class="project-title text-break">
+                                <span id="project-unique-title">Portafolio personal - Proyecto ArgentinaPrograma</span>
+                                <button class="edit-project-button align-self-end" id="project-edit-title-one" onclick="showEditOption('project-title-input')"><i class="bi bi-pencil-square"></i></button>
                             </div>
+                            <input type="text" id="project-title-input" placeholder="Editar titulo" class="input-style" onchange="editElement('project-title-input','project-unique-title')">
+
                             <div class="row align-items-center">
                                 <div class="col project-template-text d-flex flex-column gap-2">
-                                    <div class="project-text">Desarrollar una aplicación web full stack, que mostrará: tus datos personales, estudios cursados, experiencia laboral, conocimiento de las
+                                    <div class="project-text" id="project-text-one">Desarrollar una aplicación web full stack, que mostrará: tus datos personales, estudios cursados, experiencia laboral, conocimiento de las
                                         tecnologías y lo que desees agregar. Es decir, ¡crear tu propio portfolio web! Esta aplicación deberá ser de arquitectura distribuida y contener un
                                         diseño de interfaz de usuario (front end) que muestre la información, una base de datos que almacene los datos antes mencionados y debe contar
                                         con las APIs necesarias para proveer a través de internet la información (back end). </div>
-                                        <button class="edit-project-button align-self-end" id="project-edit-text-one" onclick="showEditOption('user-name-input')"><i class="bi bi-pencil-square"></i></button>
-                                    <div class="d-flex gap-3 align-items-center">
-                                        <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/portafolio-FrontEnd"> GitHub</a></button>
-                                        <button class="edit-project-button" id="project-edit-link-one" onclick="showEditOption('user-name-input')"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="edit-project-button align-self-end" id="project-edit-text-one" onclick="showEditOption('project-description-input'),showEditOption('submit-project-description')"><i class="bi bi-pencil-square"></i></button>
+                                    <div class="d-flex gap-4">
+                                        <textarea name="project-description-input" placeholder="Inserte la nueva descripcion" class="input-style flex-fill" id="project-description-input" style="resize: none;"></textarea>
+                                        <button class="edit-about-button" id="submit-project-description" onclick="editElement('project-description-input', 'project-text-one','submit-project-description')"><i class="bi bi-check-square"></i></button>
                                     </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <button class="btn-github" id="button-link-one"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/portafolio-FrontEnd" target="_blank"> GitHub</a></button>
+                                        <button class="edit-project-button" id="project-edit-link-one" onclick="showEditOption('project-link-input-one')"><i class="bi bi-pencil-square"></i></button>
+                                    </div>
+                                    <input type="url" id="project-link-input-one" placeholder="https://example.com" class="input-style" onchange="changeLink('one')">
                                     
                                 </div>
                                 <div class="col text-center">
-                                    <img src="/resources/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <img id="image-project-one" src="/resources/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <!-- <input class="edit-project-button" type="file" accept="image/*" name="project-upload-img-one" id="project-upload-img-one" style="margin-top: 0.5rem;"> -->
                                     <button class="edit-project-button" id="project-upload-img-one" style="margin-top: 0.5rem;"><i class="bi bi-upload"></i></button>
                                 </div>
                             </div>  
                         </div>
-                        <div class="divisor-line"></div>
                     </li>
-                    <li>    
+                    
+                    <!-- <li id="project-two">
+                        <div class="divisor-line"></div>
                         <div class="project-template position-relative d-flex flex-column align-items-start justify-content-start gap-3 py-4">
                             <div class="project-buttons position-absolute top-0 end-0 m-3 edit-about-button">
                                 <button onclick="showProjectEditables('two')"><i class="bi bi-pencil-square"></i></button>
-                                <button onclick="removeSection(1)"><i class="bi bi-trash3"></i></button>
+                                <button onclick="removeSection('two')"><i class="bi bi-trash3"></i></button>
                             </div>
                             <div class="project-title">
                                 Console ATM - Trabajo grupal UNRN 
@@ -167,23 +187,9 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="divisor-line"></div>
                     </li>
-                </ol>
-                <!--
-                <div class="project-template d-flex flex-column align-items-start justify-content-start gap-3 py-4">
-                    <div class="project-title"><span>3.</span> Portafolio personal </div>
-                    <div class="row align-items-center">
-                        <div class="col project-template-text">
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt distinctio officiis, a magni tempora soluta quo, libero minus corporis voluptatibus quidem impedit, ut dolor consequuntur accusamus facilis perferendis amet officia?</div>
-                            <button class="btn-github"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/portafolio-FrontEnd"> GitHub</a></button>
-                        </div>
-                        <div class="col">
-                            <img src="/resources/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
-                        </div>
-                    </div>  
-                </div>
-                -->
+                </ul> -->
+               
             </section>
             <section class="contact d-flex flex-column align-items-center gap-5" id="contact">
                 <div class="contact-title">
@@ -220,6 +226,9 @@
     <!-- Particles JS -->
     <script src="/js/particles.min.js"></script>
     <script src="/js/app.js"></script> 
+
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
