@@ -198,6 +198,44 @@
                             </div>  
                         </div>
                     </li>
+                    <li id="project-three">
+                        <div class="divisor-line"></div>
+                        <div class="project-template position-relative d-flex flex-column align-items-start justify-content-start gap-3 py-4">
+                            <div class="project-buttons position-absolute top-0 end-0 m-3 edit-about-button">
+                                <button class="edit-about-button invisible" onclick="notShowProjectEditables('three')" id="project-accept-changes-three"><i class="bi bi-check-square"></i></button>
+                                <button onclick="showProjectEditables('three')"><i class="bi bi-pencil-square"></i></button>
+                                <button onclick="removeSection('three')"><i class="bi bi-trash3"></i></button>
+                            </div>
+                            <div class="project-title text-break">
+                                <span id="project-unique-title">Calculadora JavaScript </span>
+                                <button class="edit-project-button align-self-end" id="project-edit-title-three" onclick="showEditOption('project-title-input')"><i class="bi bi-pencil-square"></i></button>
+                            </div>
+                            <input type="text" id="project-title-input" placeholder="Editar titulo" class="input-style" onchange="editElement('project-title-input','project-unique-title')">
+
+                            <div class="row align-items-center">
+
+                                <div class="col project-template-text d-flex flex-column gap-2">
+                                    <div class="project-text" id="project-text-three">El objetivo de este proyecto era simular el funcionamiento de un cajero automatico de un banco internacional mediante un algoritmo que sea ejecutado en la consola. El cajero debia contar con las funciones de: Consultar saldo en Soles Peruanos y Pesos Argentinos, consultar movimientos de la cuenta, retirar Soles y Pesos y poder transferir Soles y Pesos.</div>
+                                        <button class="edit-project-button align-self-end" id="project-edit-text-three" onclick="showEditOption('project-description-input'),showEditOption('submit-project-description')"><i class="bi bi-pencil-square"></i></button>
+                                    <div class="d-flex gap-4">
+                                        <textarea name="project-description-input" placeholder="Inserte la nueva descripcion" class="input-style flex-fill" id="project-description-input" style="resize: none;"></textarea>
+                                        <button class="edit-about-button" id="submit-project-description" onclick="editElement('project-description-input', 'project-text-three','submit-project-description')"><i class="bi bi-check-square"></i></button>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <button class="btn-github" id="button-link-three"><i class="bi bi-github"></i><a href="https://github.com/Julian03-lab/TPFinal"" target="_blank"> GitHub</a></button>
+                                        <button class="edit-project-button" id="project-edit-link-three" onclick="showEditOption('project-link-input-three')"><i class="bi bi-pencil-square"></i></button>
+                                    </div>
+                                    <input type="url" id="project-link-input-three" placeholder="https://example.com" class="input-style" onchange="changeLink('three')">
+                                </div>
+                                <div class="col text-center">
+                                    <img id="image-project-three" src="/resources/calculator-project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <!-- <input class="edit-project-button" type="file" accept="image/*" name="project-upload-img-three" id="project-upload-img-three" style="margin-top: 0.5rem;"> -->
+                                    <button class="edit-project-button" id="project-upload-img-three" style="margin-top: 0.5rem;"><i class="bi bi-upload"></i></button>
+                                </div>
+
+                            </div>  
+                        </div>
+                    </li>
             </section>
             <section class="contact d-flex flex-column align-items-center gap-5" id="contact">
                 <div class="contact-title">
