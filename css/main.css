@@ -85,7 +85,7 @@ em{
     border-radius: 50%;
     background-position: center center;
     background-size: cover;
-    background-image: url(/resources/stock1.jpg);
+    background-image: url(/resources/pp-mia.jpg);
   }
 
   
@@ -154,7 +154,7 @@ footer .header-element{
 
 .project-title{
     color: var(--naranjax);
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-top: 2rem;
 }

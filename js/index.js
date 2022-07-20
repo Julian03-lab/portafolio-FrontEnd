@@ -61,10 +61,8 @@ function changeLink(link){
     
 }
 
-Sortable.create(document.getElementById('projects-list'), {
+/* Sortable.create(document.getElementById('projects-list'), {
     animation: 150
-});
+}); */
 
-// function modifyIMG(project) {
-//     get
-// }
+
