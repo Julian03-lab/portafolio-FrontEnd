@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--negrox);
+    background: linear-gradient(0deg, rgba(20, 24, 36, 0.9), rgba(20, 24, 36, 0.9)), url(/resources/profile-pictures/Bariloche-Banner.jpg);
     padding: 1rem 5.1875rem;
 }
 

@@ -10,7 +10,7 @@
     z-index: 99;
 }
 
-.about-title, .contact-title, .section-project-title, .education-title{
+h1{
     font-weight: 700;
     font-size: 5rem;
     color: var(--naranjax);
@@ -85,7 +85,7 @@ em{
     border-radius: 50%;
     background-position: center center;
     background-size: cover;
-    background-image: url(/resources/pp-mia.jpg);
+    background-image: url(/resources/profile-pictures/pp-mia.jpg);
   }
 
   
@@ -137,6 +137,34 @@ em{
     color: var(--naranjax);
 }
 
+.education-card{
+    border: 3px solid var(--naranjax);
+    padding: 3rem 0;
+    width: 50%;
+}
+
+.education-card__title{
+    font-weight: 800;
+    color: var(--naranjax);
+    font-size: 2.5rem;
+    text-align: center;
+    width: 75%;
+
+}
+
+.image-width{
+    width: 35%;
+}
+
+.education-card__info{
+    color: var(--blancox);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.625rem 1rem;
+}
+
+
+
 .contact-content a:hover{
     font-size: 5.4rem;
 }
@@ -163,6 +191,7 @@ footer .header-element{
     font-size: 2rem;
     font-weight: 400;
     color: var(--blancox);
+    text-align: justify;
 }
 
 .btn-github{

@@ -18,6 +18,7 @@
 </head>
 <body>
     <div id="particles-js"></div>
+    <!-- Header -->
     <div class="container-fluid">
         <header class="d-flex flex-column align-items-center header">
             <div class="title text-center">Julián Fontana</div>
@@ -57,10 +58,9 @@
     </div>
     <div class="container-fluid">
         <main class="d-flex flex-column align-items-center"> 
+            <!-- About -->
             <section class="container-fluid about d-flex flex-column align-items-center gap-3" id="about">
-                <div class="about-title">
-                    <a><i class="bi bi-file-person-fill"></i> Sobre Mi</a>
-                </div>
+                <h1 class="about-title"><i class="bi bi-file-person-fill"></i> Sobre Mi</h1>
                 <div class=" w-75 d-flex flex-column justify-content-center align-items-center gap-3 position-relative" >
                     <div class="position-absolute top-0 end-0 m-3 d-flex gap-3">
                         <button class="edit-about-button invisible" onclick="notShowAboutEditables()"><i class="bi bi-check-square"></i></button>
@@ -110,15 +110,53 @@
                     -->
                 </div>
             </section>
+            <!-- Education -->
             <section class="education d-flex flex-column align-items-center gap-4" id="education">
-                <div class="education-title">
-                    <a><i class="bi bi-journals"></i> Educacion</a>
+                <h1 class="education-title"><i class="bi bi-journals"></i> Educacion</h1>
+                <div class="education-card d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="education-card__title">Ingeniería en Computacion</div>
+                    <div class="education-card__info d-flex justify-content-center align-items-center text-center gap-4">
+                        <p class="w-25">Universidad Nacional de Rio Negro</p>
+                        <img src="/resources/education-logos/unrn-logo.png" alt="Logo UNRN" class="image-width">
+                        <p class="w-25">2022 - Presente</p>
+                    </div>
+                </div>
+                <div class="education-card d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="education-card__title">#YoProgramo</div>
+                    <div class="education-card__info d-flex justify-content-center align-items-center text-center gap-4">
+                        <p class="w-25">Ministerio de Desarrollo Productivo</p>
+                        <img src="/resources/education-logos/ap-logo.png" alt="Logo ArgentinaPrograma" class="image-width">
+                        <p class="w-25">Junio 2022 - Enero 2023</p>
+                    </div>
+                </div>
+                <div class="education-card d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="education-card__title">#SéProgramar</div>
+                    <div class="education-card__info d-flex justify-content-center align-items-center text-center gap-4">
+                        <p class="w-25">Ministerio de Desarrollo Productivo</p>
+                        <img src="/resources/education-logos/ap-logo.png" alt="Logo ArgentinaPrograma" class="image-width">
+                        <p class="w-25">Marzo 2022 - Junio 2023</p>
+                    </div>
+                </div>
+                <div class="education-card d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="education-card__title">Desarrollo web. CSS desde cero. Edición 2020</div>
+                    <div class="education-card__info d-flex justify-content-center align-items-center text-center gap-4">
+                        <p class="w-25">Udemy.com</p>
+                        <img src="/resources/education-logos/udemy-logo.png" alt="Logo Udemy" class="image-width">
+                        <p class="w-25">16/04/2021</p>
+                    </div>
+                </div>
+                <div class="education-card d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="education-card__title">HTML5 desde cero Edición 2020</div>
+                    <div class="education-card__info d-flex justify-content-center align-items-center text-center gap-4">
+                        <p class="w-25">Udemy.com</p>
+                        <img src="/resources/education-logos/udemy-logo.png" alt="Logo Udemy" class="image-width">
+                        <p class="w-25">20/02/2021</p>
+                    </div>
                 </div>
             </section>
+            <!-- Projects -->
             <section class="project d-flex flex-column align-items-center gap-4" id="project">
-                <div class="section-project-title">
-                    <i class="bi bi-pc"></i> Proyectos </a>
-                </div>
+                <h1 class="section-project-title"><i class="bi bi-pc"></i> Proyectos</h1>
                 <ul id="projects-list">
                     <li id="project-one">
                         <div class="divisor-line"></div>
@@ -153,7 +191,7 @@
                                     
                                 </div>
                                 <div class="col text-center">
-                                    <img id="image-project-one" src="/resources/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <img id="image-project-one" src="/resources/projects-images/Portafolio Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
                                     <!-- <input class="edit-project-button" type="file" accept="image/*" name="project-upload-img-one" id="project-upload-img-one" style="margin-top: 0.5rem;"> -->
                                     <button class="edit-project-button" id="project-upload-img-one" style="margin-top: 0.5rem;"><i class="bi bi-upload"></i></button>
                                 </div>
@@ -176,7 +214,7 @@
 
                             <div class="row align-items-center">
                                 <div class="col text-center">
-                                    <img id="image-project-two" src="/resources/ATM Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <img id="image-project-two" src="/resources/projects-images/ATM Project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
                                     <!-- <input class="edit-project-button" type="file" accept="image/*" name="project-upload-img-two" id="project-upload-img-two" style="margin-top: 0.5rem;"> -->
                                     <button class="edit-project-button" id="project-upload-img-two" style="margin-top: 0.5rem;"><i class="bi bi-upload"></i></button>
                                 </div>
@@ -215,7 +253,7 @@
                             <div class="row align-items-center">
 
                                 <div class="col project-template-text d-flex flex-column gap-2">
-                                    <div class="project-text" id="project-text-three">El objetivo de este proyecto era simular el funcionamiento de un cajero automatico de un banco internacional mediante un algoritmo que sea ejecutado en la consola. El cajero debia contar con las funciones de: Consultar saldo en Soles Peruanos y Pesos Argentinos, consultar movimientos de la cuenta, retirar Soles y Pesos y poder transferir Soles y Pesos.</div>
+                                    <div class="project-text" id="project-text-three">Una calculadora basica hecha con HTML, CSS y JavaScript, realizada a modo de practica personal.</div>
                                         <button class="edit-project-button align-self-end" id="project-edit-text-three" onclick="showEditOption('project-description-input'),showEditOption('submit-project-description')"><i class="bi bi-pencil-square"></i></button>
                                     <div class="d-flex gap-4">
                                         <textarea name="project-description-input" placeholder="Inserte la nueva descripcion" class="input-style flex-fill" id="project-description-input" style="resize: none;"></textarea>
@@ -228,7 +266,7 @@
                                     <input type="url" id="project-link-input-three" placeholder="https://example.com" class="input-style" onchange="changeLink('three')">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="image-project-three" src="/resources/calculator-project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
+                                    <img id="image-project-three" src="/resources/projects-images/calculator-project.png" alt="stock img" style="border-radius: 1rem;" class="img-fluid">
                                     <!-- <input class="edit-project-button" type="file" accept="image/*" name="project-upload-img-three" id="project-upload-img-three" style="margin-top: 0.5rem;"> -->
                                     <button class="edit-project-button" id="project-upload-img-three" style="margin-top: 0.5rem;"><i class="bi bi-upload"></i></button>
                                 </div>
@@ -237,10 +275,9 @@
                         </div>
                     </li>
             </section>
+            <!-- Contact -->
             <section class="contact d-flex flex-column align-items-center gap-5" id="contact">
-                <div class="contact-title">
-                    <i class="bi bi-mailbox2"></i> Contacto</a>
-                </div>
+                <h1 class="contact-title"><i class="bi bi-mailbox2"></i> Contacto</h1>
                 <div class="contact-content text-center">
                     <div class="option-white">¿Queres contactar conmigo?</div>
                     <div class="option-orange">Hacelo al siguiente correo:</div>
@@ -250,6 +287,7 @@
             </section>
         </main>
     </div>
+    <!-- Footer -->
     <div class="container-fluid">
         <footer class="d-flex justify-content-between align-items-center">
             <div id="copyright">Copyright&copy; 2022 - Página creada por <em>Julián Fontana</em> - Todos los derechos reservados</div>
@@ -269,6 +307,7 @@
             </ul>
         </footer>
     </div>
+    
     <!-- Particles JS -->
     <script src="/js/particles.min.js"></script>
     <script src="/js/app.js"></script> 
